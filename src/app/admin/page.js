@@ -30,7 +30,7 @@ const page = () => {
 
   const submitdada =async()=>{
     
-    const res = await fetch(`${process.env.HOST_VAR}api/addadmins`, {
+    const res = await fetch(`api/addadmins`, {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -73,7 +73,7 @@ const page = () => {
 
   const getadmindata =async()=>{
    
-    const res = await fetch(`${process.env.HOST_VAR}api/getadmins`, {
+    const res = await fetch(`api/getadmins`, {
         method: "GET",
         headers: {
           Accept: "application/json",
