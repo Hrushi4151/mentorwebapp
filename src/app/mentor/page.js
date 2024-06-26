@@ -45,7 +45,7 @@ const getmenteedata =async(batch=null,profname)=>{
         let fdata={batch:batch,
             profname:profname
         }
-        const res = await fetch(`http://localhost:3000/api/getmentees`, {
+        const res = await fetch(`${HOST_VAR}/api/getmentees`, {
             method: "POST",
             headers: {
               Accept: "application/json",

@@ -28,7 +28,7 @@ const page = () => {
   };
 
   const submitdada =async()=>{
-    const res = await fetch(`http://localhost:3000/api/addmentors`, {
+    const res = await fetch(`${HOST_VAR}/api/addmentors`, {
         method: "POST",
         headers: {
           Accept: "application/json",
