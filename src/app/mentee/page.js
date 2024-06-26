@@ -41,7 +41,7 @@ export default function Page({ params }) {
   }, [toogle]);
 
   const searchdata = async (enroll) => {
-    const res = await fetch(`${HOST_VAR}/api/getstudentdetail`, {
+    const res = await fetch(`api/getstudentdetail`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -68,7 +68,7 @@ export default function Page({ params }) {
     if (data != updateobj) {
       console.log("data");
       const res = await fetch(
-        `${process.env.HOST_VAR}api/updatestudentdetails`,
+        `api/updatestudentdetails`,
         {
           method: "POST",
           headers: {
