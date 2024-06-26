@@ -14,7 +14,7 @@ const semarr = [0, 1, 2, 3, 4, 5];
 
 const searchdata =async()=>{
     
-    const res = await fetch(`${process.env.HOST_VAR}api/getstudentdetail`, {
+    const res = await fetch(`api/getstudentdetail`, {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -52,7 +52,7 @@ const updatedata = async () => {
     if (data!=updateobj) {
       console.log("data")
     const res = await fetch(
-      `${process.env.HOST_VAR}api/updatestudentdetails`,
+      `api/updatestudentdetails`,
       {
         method: "POST",
         headers: {
