@@ -28,7 +28,7 @@ const page = () => {
   };
 
   const submitdada =async()=>{
-    const res = await fetch(`${HOST_VAR}/api/addmentors`, {
+    const res = await fetch(`${process.env.HOST_VAR}/api/addmentors`, {
         method: "POST",
         headers: {
           Accept: "application/json",

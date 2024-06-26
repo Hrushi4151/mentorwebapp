@@ -51,7 +51,7 @@ const page = () => {
   };
 
   const submitdada =async()=>{
-    const res = await fetch(`${HOST_VAR}/api/allocatementor`, {
+    const res = await fetch(`${process.env.HOST_VAR}/api/allocatementor`, {
         method: "POST",
         headers: {
           Accept: "application/json",

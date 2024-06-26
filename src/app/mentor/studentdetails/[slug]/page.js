@@ -70,7 +70,7 @@ export default function Page({ params }) {
       if (data!=updateobj) {
         console.log("data")
       const res = await fetch(
-        `${HOST_VAR}/api/updatestudentdetails`,
+        `${process.env.HOST_VAR}/api/updatestudentdetails`,
         {
           method: "POST",
           headers: {

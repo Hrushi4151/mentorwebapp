@@ -42,7 +42,7 @@ export default function Home() {
 
  const loginsubmit=async(e)=>{
   e.preventDefault()
-  const res = await fetch(`${HOST_VAR}/api/login`, {
+  const res = await fetch(`${process.env.HOST_VAR}/api/login`, {
     method: "POST",
     headers: {
       Accept: "application/json",
