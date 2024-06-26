@@ -37,7 +37,7 @@ export default function Page({ params }) {
 
   const searchdata = async (id) => {
     let mid = id;
-    const res = await fetch(`${HOST_VAR}/api/getstudentdetail`, {
+    const res = await fetch(`${HOST_VAR}api/getstudentdetail`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -70,7 +70,7 @@ export default function Page({ params }) {
       if (data!=updateobj) {
         console.log("data")
       const res = await fetch(
-        `${process.env.HOST_VAR}/api/updatestudentdetails`,
+        `${process.env.HOST_VAR}api/updatestudentdetails`,
         {
           method: "POST",
           headers: {
