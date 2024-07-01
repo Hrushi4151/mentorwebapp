@@ -82,7 +82,7 @@ const page = () => {
       });
       const response = await res.json();
       setadminsarr(response.admins)
-      settdata(response.admins)
+     // settdata(response.admins)
     //   console.log(response.mentees)
 }
   
