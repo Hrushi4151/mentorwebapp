@@ -19,15 +19,14 @@ export async function POST(req,res) {
              };
              
              console.log(doc)
-             const mentor = Mentor.find({enrollment:dic.enrollment});
-             if(!mentor){
+             const mentor = Mentor.find({enrollment:doc.enrollment});
+             if(mentor!=null){
+                console.log("sddgdgf")
                 const result = await Mentor.create(doc);
              }
 
             
         })
-        
-
         return NextResponse.json({ result:"Succesfull inserted" , status: 200 });
     } catch (error) {
         console.log(error)
