@@ -59,11 +59,11 @@ export async function POST(req, res) {
             console.log(mentee.mentors);
             let year = row[2];
             if (year.toLowerCase() === "fy") {
-                mentee.mentors.fy = row[3];
+                mentee.mentors.fy = row[4];
             } else if (year.toLowerCase() === "sy") {
-                mentee.mentors.sy = row[3];
+                mentee.mentors.sy = row[4];
             } else if (year.toLowerCase() === "ty") {
-                mentee.mentors.ty = row[3];
+                mentee.mentors.ty = row[4];
             }
 
             const updatedmentors = mentee.mentors;
