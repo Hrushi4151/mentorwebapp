@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server';
 export async function POST(req,res) {
 
     try {
-        connectDB();
+        await connectDB();
         let {data}=await req.json()
         console.log(data.profname)
         if(data.profname!=null && data.batch!=null){
